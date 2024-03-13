@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[T_EngineerAssignment] (Table)
+
+** Supporting actions
+     Refresh
+       [dbo].[usp_T_CallDetails_InsertUpdate] (Procedure)
+       [dbo].[usp_T_EngineerAssignment_Get] (Procedure)
+       [dbo].[usp_T_EngineerAssignment_InsertUpdate] (Procedure)
+       [dbo].[usp_T_Ticket_ByCaseNumber] (Procedure)
+       [dbo].[usp_T_TicketTimeline_ByCaseNumber] (Procedure)
+       [dbo].[usp_TicketInBulk_Insert] (Procedure)

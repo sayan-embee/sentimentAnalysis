@@ -1,0 +1,16 @@
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dacpac
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dll
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.pdb
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\Model.xml
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\refactor.xml
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\postdeploy.sql
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\predeploy.sql
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
+D:\NSSOperationAutomation\GIT\Embee_NSS_ClientApp\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dacpac
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dll
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.pdb
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
+D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb

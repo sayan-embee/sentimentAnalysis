@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[T_TicketDetails]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[udt_T_TicketDetails] (User-Defined Table Type)
+       [dbo].[usp_TicketInBulk_Insert] (Procedure)
+     Recreate table
+       [dbo].[T_TicketDetails] (Table)
+     Alter
+       [dbo].[usp_T_Ticket_ByCaseNumber] (Procedure)
+       [dbo].[usp_T_EngineerAssignment_Get] (Procedure)
+       [dbo].[usp_T_EngineerAssignment_InsertUpdate] (Procedure)
+       [dbo].[usp_T_EngineerAssignmentHistory_Get] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[usp_T_TicketTimeline_ByCaseNumber] (Procedure)
+       [dbo].[usp_Ticket_Get] (Procedure)
+       [dbo].[usp_Ticket_Insert] (Procedure)

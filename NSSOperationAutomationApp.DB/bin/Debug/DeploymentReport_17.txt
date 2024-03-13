@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[udt_T_CardNotificationResponse] (User-Defined Table Type)
+     Create
+       [dbo].[udt_T_CardNotificationResponse] (User-Defined Table Type)
+
+** Supporting actions
+     Drop
+       [dbo].[usp_AssignReassignTicket_CardResponse_Insert] (Procedure)
+     Create
+       [dbo].[usp_AssignReassignTicket_CardResponse_Insert] (Procedure)

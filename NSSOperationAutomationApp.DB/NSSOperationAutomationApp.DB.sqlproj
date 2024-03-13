@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>NSSOperationAutomationApp.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{7172e0ea-dd3e-4526-bd75-4d5bf3a95b9b}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>NSSOperationAutomationApp.DB</RootNamespace>
+    <AssemblyName>NSSOperationAutomationApp.DB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\M_CallAction.sql" />
+    <Build Include="dbo\Tables\M_DocumentType.sql" />
+    <Build Include="dbo\Tables\M_PartConsumptionType.sql" />
+    <Build Include="dbo\Tables\T_EngineerAssignment.sql" />
+    <Build Include="dbo\Tables\M_CallStatus.sql" />
+    <Build Include="dbo\Tables\T_EngineerAssignmentHistory.sql" />
+    <Build Include="dbo\Tables\T_CallDetails.sql" />
+    <Build Include="dbo\Tables\T_CallDocuments.sql" />
+    <Build Include="dbo\Tables\T_Conversations.sql" />
+    <Build Include="dbo\Tables\T_TicketDetails.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_EngineerAssignment_InsertUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_CallDetails_InsertUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_Conversation_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_Conversation_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Conversation_Remove.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Conversation_Update.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_CallAction_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_CallStatus_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_DocumentType_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_M_PartConsumptionType_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_CallDetails_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_CallDocuments_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_EngineerAssignment_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_EngineerAssignmentHistory_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Ticket_Get.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Ticket_Insert.sql" />
+    <Build Include="dbo\User Defined Types\udt_T_CallDocuments.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_CallDocuments_InsertUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_Ticket_ByCaseNumber.sql" />
+    <Build Include="dbo\Stored Procedures\usp_T_TicketTimeline_ByCaseNumber.sql" />
+    <Build Include="dbo\User Defined Types\udt_T_TicketDetails.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TicketInBulk_Insert.sql" />
+    <Build Include="dbo\Tables\T_CardNotificationResponse.sql" />
+    <Build Include="dbo\User Defined Types\udt_T_CardNotificationResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AssignReassignTicket_CardResponse_Insert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NSSOperationAutomationApp.DB.publish.xml" />
+  </ItemGroup>
+</Project>
