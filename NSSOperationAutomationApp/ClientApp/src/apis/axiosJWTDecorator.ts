@@ -185,12 +185,14 @@ export class AxiosJWTDecorator {
         try {
             config = await this.setupAuthorizationHeader(config);
             var form = new FormData();
-            form.append("client_id", "36a6b756-047e-46e7-ad06-6b81dc7aa8be");
+            //form.append("client_id", "36a6b756-047e-46e7-ad06-6b81dc7aa8be");
+            form.append("client_id", "");
             form.append("scope", `https://graph.microsoft.com/.default`);
             form.append("code", config.headers.Authorization);
             form.append("redirect_uri", `https://05b9-202-142-101-60.ngrok.io/signin-simple-end`);
             form.append("grant_type", "client_credentials");
-            form.append("client_secret", "oMA7Q~sJHmC-.jMQEYn6J~~DOpeXWfbPfrw5U");
+            form.append("client_secret", "");
+            //form.append("client_secret", "oMA7Q~sJHmC-.jMQEYn6J~~DOpeXWfbPfrw5U");
            
             return await axios.post(url, form);
         } catch (error) {

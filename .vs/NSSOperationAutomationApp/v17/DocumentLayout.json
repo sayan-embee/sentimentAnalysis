@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\TeamsProject\\SentimentAnalyzer\\sentimentAnalysis\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|d:\\teamsproject\\sentimentanalyzer\\sentimentanalysis\\nssoperationautomationapp\\clientapp\\src\\apis\\axiosjwtdecorator.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\clientapp\\src\\apis\\axiosjwtdecorator.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "axiosJWTDecorator.ts",
+              "DocumentMoniker": "D:\\TeamsProject\\SentimentAnalyzer\\sentimentAnalysis\\NSSOperationAutomationApp\\ClientApp\\src\\apis\\axiosJWTDecorator.ts",
+              "RelativeDocumentMoniker": "NSSOperationAutomationApp\\ClientApp\\src\\apis\\axiosJWTDecorator.ts",
+              "ToolTip": "D:\\TeamsProject\\SentimentAnalyzer\\sentimentAnalysis\\NSSOperationAutomationApp\\ClientApp\\src\\apis\\axiosJWTDecorator.ts",
+              "RelativeToolTip": "NSSOperationAutomationApp\\ClientApp\\src\\apis\\axiosJWTDecorator.ts",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAAMEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-13T12:18:50.837Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
