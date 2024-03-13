@@ -1,0 +1,26 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Welcome to ${AppName} Application!",
+          "size": "large",
+          "weight": "bolder",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "${DescHeading}:-",
+          "size": "medium",
+          "weight": "bolder",
+          "wrap": true
+        }
+      ]
+    }
+  ]
+}

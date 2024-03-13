@@ -1,0 +1,228 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Ticket Details",
+                  "weight": "Bolder",
+                  "size": "Large"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${CallStatus}",
+                  "wrap": true,
+                  "horizontalAlignment": "Right",
+                  "height": "stretch",
+                  "weight": "Bolder"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Case No:",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${CaseNumber}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Ticket No:",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${TicketId}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Ticket Created On:",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${CreatedOn}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Assigned On:",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${AssignedOn}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Assigned By:",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${AssignedBy} (${AssignedByEmail})",
+      "wrap": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Service Name:",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${ServiceAccount}",
+      "wrap": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Action Details",
+      "weight": "Bolder",
+      "size": "Large",
+      "spacing": "Medium"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Action:",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${CallAction}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Action Taken On",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${UpdatedOnIST}",
+              "wrap": true,
+              "spacing": "Small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Action Taken By",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",      
+      "text": "${UpdatedBy} (${UpdatedByEmail})",
+      "wrap": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Remarks:",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${CloserRemarks}",
+      "maxLines": 5,
+      "wrap": true,
+      "spacing": "Small"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "VIEW-TASK-ADMIN",
+      "data": {
+        "msteams": {
+          "type": "task/fetch"
+        },
+        "Command": "VIEW-TASK-ADMIN",
+        "TaskId": "${CaseNumber}"
+      },
+      "title": "View Details",
+      "iconUrl": "https://img.icons8.com/color/480/000000/info--v1.png",
+      "style": "positive"
+    }
+  ]
+}
