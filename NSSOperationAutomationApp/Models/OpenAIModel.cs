@@ -9,6 +9,9 @@ namespace NSSOperationAutomationApp.Models
 
         [JsonProperty("outputModel")]
         public SummaryModel? OutputModel { get; set; }
+
+        [JsonProperty("fileOutputModel")]
+        public BlobFileUploadModel? FileOutputModel { get; set; }
     }
 
     public class SpeakerModel
@@ -27,6 +30,9 @@ namespace NSSOperationAutomationApp.Models
 
         [JsonProperty("reason")]
         public string Reason { get; set; }
+
+        [JsonProperty("transcribeText")]
+        public string TranscribeText { get; set; }
     }
 
     public class AudioOutputModel
@@ -42,5 +48,29 @@ namespace NSSOperationAutomationApp.Models
 
         [JsonProperty("summary")]
         public SummaryModel Summary { get; set; }
+    }
+
+    public class BlobFileUploadModel
+    {
+        [JsonProperty("fileId")]
+        public long FileId { get; set; }
+
+        [JsonProperty("refId")]
+        public string RefId { get; set; }
+
+        [JsonProperty("fileName")]
+        public string FileName { get; set; }
+
+        [JsonProperty("fileInternalName")]
+        public string FileInternalName { get; set; }
+
+        [JsonProperty("fileUrl")]
+        public string FileUrl { get; set; }
+
+        [JsonProperty("contentType")]
+        public string ContentType { get; set; }
+
+        //[JsonProperty("uniqueFileKey")]
+        //public string UniqueFileKey { get; set; }
     }
 }

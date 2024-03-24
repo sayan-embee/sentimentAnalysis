@@ -49,6 +49,8 @@ namespace NSSOperationAutomationApp.HelperMethods
 
                                 if (summaryObj != null)
                                 {
+                                    summaryObj.TranscribeText = output.ExtractedText;
+
                                     return (new ReturnMessageModel { Status = 1, Message = "Summary has been generated successfully" }, summaryObj);
                                 }
                             }

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="5dfd2744-c45b-4a4f-ba14-1a9bcc10dd37" ChangeDateTime="03/22/2024 13:00:44">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AutoId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d3b4529-76ae-4baa-a7de-90071e7e8fd5" ChangeDateTime="03/22/2024 13:01:32">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[summaryText]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SummaryText" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cf222e36-f5cd-4668-9ba3-6f92dc7ea578" ChangeDateTime="03/22/2024 13:02:23">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[sentiment]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sentiment" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c2ef184d-f646-4e7a-ae09-423bfa045ddd" ChangeDateTime="03/22/2024 13:03:18">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[fileName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="954c5d19-8871-405d-9487-261e56de8e2c" ChangeDateTime="03/22/2024 13:03:23">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[fileInternalName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileInternalName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="341766e9-d214-4c21-b100-e56b8ed04497" ChangeDateTime="03/22/2024 13:03:49">
+    <Property Name="ElementName" Value="[dbo].[T_SentimentDetails].[fileUrl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_SentimentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileUrl" />
+  </Operation>
+</Operations>

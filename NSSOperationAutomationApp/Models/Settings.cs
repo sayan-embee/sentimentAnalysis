@@ -6,4 +6,10 @@ namespace NSSOperationAutomationApp.Models
     {
         public string ConnectionStrings { get; set; }
     }
+
+    public class AzureBlobSettings
+    {
+        public string StorageConnectionString { get; set; }
+        public string ContainerName { get; set; }
+    }
 }

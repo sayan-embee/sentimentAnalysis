@@ -14,3 +14,9 @@ D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\bin\Debug\
 D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
 D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
 D:\TeamsProject\SentimentAnalyzer\Phase1\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dacpac
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dll
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.pdb
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb

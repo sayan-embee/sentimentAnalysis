@@ -56,12 +56,14 @@ namespace NSSOperationAutomationApp
 
             services.AddScoped<IAdaptiveCardService, AdaptiveCardService>();
             services.AddScoped<INotificationService, NotificationService>();
+            services.AddScoped<IAzureBlobService, AzureBlobService>();
 
             services.AddScoped<IConversationData, ConversationData>();
             services.AddScoped<IDataAccess, DataAccess>();
             services.AddScoped<IFileHelper, FileHelper>();                       
             services.AddScoped<INotificationHelper, NotificationHelper>();                       
-            services.AddScoped<IOpenAIHelper, OpenAIHelper>();                       
+            services.AddScoped<IOpenAIHelper, OpenAIHelper>();
+            
         }
 
         public static void RegisterAuthenticationServices(
