@@ -20,3 +20,7 @@ E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOpe
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\Model.xml
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\refactor.xml
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\postdeploy.sql
+E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\predeploy.sql

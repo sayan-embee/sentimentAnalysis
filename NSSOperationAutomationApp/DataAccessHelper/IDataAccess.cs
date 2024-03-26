@@ -24,5 +24,10 @@ namespace NSSOperationAutomationApp.DataAccessHelper
         Task<TicketTimelineViewModel?> GetTicketTimelineByCaseNo(string CaseNumber);
 
         Task<ReturnMessageModel?> Insert_AssignReassignTicket_CardResponse(List<TicketAssignmentCardModel> dataList);
+
+        #region SentimentAnalysis
+        Task<ReturnMessageModel?> InsertAudioSummary(OpenAIModel data);
+        Task<List<GetSentimentAnalysisModel>?> GetAudioSummary(int? Id);
+        #endregion
     }
 }

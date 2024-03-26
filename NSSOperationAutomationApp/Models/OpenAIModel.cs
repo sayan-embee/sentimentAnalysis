@@ -73,4 +73,45 @@ namespace NSSOperationAutomationApp.Models
         //[JsonProperty("uniqueFileKey")]
         //public string UniqueFileKey { get; set; }
     }
+
+    public class GetSentimentAnalysisModel
+    {
+        [JsonProperty("autoId")]
+        public int? AutoId { get; set; }
+
+        [JsonProperty("summaryText")]
+        public string SummaryText { get; set; }
+
+        [JsonProperty("sentiment")]
+        public string Sentiment { get; set; }
+
+        [JsonProperty("reason")]
+        public string Reason { get; set; }
+
+        [JsonProperty("transcribeText")]
+        public string TranscribeText { get; set; }
+
+
+        [JsonProperty("fileRefId")]
+        public string FileRefId { get; set; }
+
+        [JsonProperty("fileName")]
+        public string FileName { get; set; }
+
+        [JsonProperty("fileInternalName")]
+        public string FileInternalName { get; set; }
+
+        [JsonProperty("fileUrl")]
+        public string FileUrl { get; set; }
+
+        [JsonProperty("contentType")]
+        public string ContentType { get; set; }
+
+        [JsonProperty("isActive")]
+        public bool IsActive { get; set; }
+
+        [JsonProperty("createdOnIST")]
+        public DateTime? CreatedOnIST { get; set; }
+
+    }
 }

@@ -14,12 +14,14 @@ namespace NSSOperationAutomationApp.Controllers
         private readonly ILogger _logger;
         private readonly IOpenAIHelper _openAIHelper;
         private readonly IAzureBlobService _azureBlobService;
+        private readonly IDataAccess _dataAccess;
 
-        public OpenAIController(ILogger<OpenAIController> logger, IOpenAIHelper openAIHelper, IAzureBlobService azureBlobService)
+        public OpenAIController(ILogger<OpenAIController> logger, IOpenAIHelper openAIHelper, IAzureBlobService azureBlobService, IDataAccess dataAccess)
         {
             this._logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this._openAIHelper = openAIHelper ?? throw new ArgumentNullException(nameof(openAIHelper));
             this._azureBlobService = azureBlobService ?? throw new ArgumentNullException(nameof(azureBlobService));
+            this._dataAccess = dataAccess ?? throw new ArgumentNullException(nameof(dataAccess));
         }
 
         #region TRANSCRIBE AUDIO FILE
@@ -179,8 +181,19 @@ namespace NSSOperationAutomationApp.Controllers
                             TimeSpan timeDifference = endTime - startTime;
                             string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
                             responseModel.ExecutionTime = formattedTimeDifference;
+                            //return this.Ok(new OpenAIModel { ResponseModel = responseModel, OutputModel = output, FileOutputModel = fileUploadModel });
+                            
+                            var data = new OpenAIModel
+                            {
+                                ResponseModel = responseModel,
+                                OutputModel = output, 
+                                FileOutputModel = fileUploadModel 
+                            };
 
-                            return this.Ok(new OpenAIModel { ResponseModel = responseModel, OutputModel = output, FileOutputModel = fileUploadModel });
+                            _ = await _dataAccess.InsertAudioSummary(data);
+
+                            return this.Ok(data);
+
                         }
                     }
                 }
@@ -198,7 +211,23 @@ namespace NSSOperationAutomationApp.Controllers
             }
         }
 
-        
+        [HttpGet]
+        [Route("getAudioSummary")]
+        public async Task<IActionResult> GetAudioSummary(int? Id)
+        {
+            try
+            {
+                var result = await _dataAccess.GetAudioSummary(Id);
+
+                return this.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"MasterAPIController --> GetCallAction() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok(ex.Message);
+            }
+        }
 
 
         #endregion

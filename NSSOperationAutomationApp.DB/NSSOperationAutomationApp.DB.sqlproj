@@ -99,8 +99,14 @@
     <Build Include="dbo\Tables\T_CardNotificationResponse.sql" />
     <Build Include="dbo\User Defined Types\udt_T_CardNotificationResponse.sql" />
     <Build Include="dbo\Stored Procedures\usp_AssignReassignTicket_CardResponse_Insert.sql" />
+    <Build Include="dbo\Tables\T_SentimentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SentimentAnalysis_Insert.sql" />
+    <Build Include="usp_SentimentAnalysis_Get.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NSSOperationAutomationApp.DB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="NSSOperationAutomationApp.DB.refactorlog" />
   </ItemGroup>
 </Project>

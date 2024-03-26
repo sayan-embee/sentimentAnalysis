@@ -716,6 +716,58 @@ namespace NSSOperationAutomationApp.DataAccessHelper
 
         #endregion
 
+
+
+        #endregion
+
+        #region Azure OpenAI Sentiment Analysis DataAccess
+        public async Task<ReturnMessageModel?> InsertAudioSummary(OpenAIModel data)
+        {
+            try
+            {
+                var result = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_SentimentAnalysis_Insert",
+                new
+                {
+                    data.OutputModel?.SummaryText,
+                    data.OutputModel?.Sentiment,
+                    data.OutputModel?.Reason,
+                    data.OutputModel?.TranscribeText,
+                    data.FileOutputModel?.RefId,
+                    data.FileOutputModel?.FileName,
+                    data.FileOutputModel?.FileInternalName,
+                    data.FileOutputModel?.FileUrl,
+                    data.FileOutputModel?.ContentType
+                });
+
+                return result.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"DataAccess --> Insert --> SQL(usp_SentimentAnalysis_Insert) execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return null;
+            }
+        }
+
+
+        public async Task<List<GetSentimentAnalysisModel>?> GetAudioSummary(int? Id)
+        {
+            try
+            {
+                var results = await _db.LoadData<GetSentimentAnalysisModel, dynamic>("usp_SentimentAnalysis_Get",
+                new
+                {
+                    Id
+                });
+
+                return results.ToList();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"DataAccess --> GetAudioSummary() --> SQL(usp_SentimentAnalysis_Get) execution failed");
+                return null;
+            }
+        }
         #endregion
     }
 }
