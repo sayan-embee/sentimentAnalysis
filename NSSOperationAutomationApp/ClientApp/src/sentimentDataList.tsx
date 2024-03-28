@@ -63,7 +63,7 @@ class SentimentTableList extends React.Component<IDashboardProps, MyState> {
 
     return (
       <div>
-        <Header/>
+        <Header currentPage="dashboard" />
         <div className="bodyContainer">
           <div className="admin-report">
             {this.state.loading ? (
@@ -81,7 +81,7 @@ class SentimentTableList extends React.Component<IDashboardProps, MyState> {
                         <tr>
                           <th className="text-center">Id</th>
                           <th className="text-center">Sentiment</th>                          
-                          <th className="text-center">File Internal Name</th>                          
+                          <th className="text-center">Internal File Name</th>                          
                           <th className="text-center" style={{width:"300px"}}>File Url</th>
                           <th className="text-center" style={{minWidth:"300px"}}>Reason</th>
                           <th className="text-center">Summary</th>

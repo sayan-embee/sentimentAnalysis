@@ -397,11 +397,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 NSSOperationAutomationApp/appsettings.Devlopment.json
-NSSOperationAutomationApp.DB/NSSOperationAutomationApp.DB.sqlproj
-NSSOperationAutomationApp.DB/NSSOperationAutomationApp.DB.sqlproj
-.vs/NSSOperationAutomationApp/DesignTimeBuild/.dtbcache.v2
-.vs/NSSOperationAutomationApp/DesignTimeBuild/.dtbcache.v2
-.vs/NSSOperationAutomationApp/v17/.suo
-.vs/NSSOperationAutomationApp/DesignTimeBuild/.dtbcache.v2
-.vs/NSSOperationAutomationApp/DesignTimeBuild/.dtbcache.v2
+
 *.v2
+.vs/*
+*.v2
+*.jfm
+/.vs

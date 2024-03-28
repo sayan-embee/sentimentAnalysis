@@ -62,7 +62,7 @@ class SentimentAnalysisPage extends React.Component<
   render() {
     return (
       <div>
-        <Header />
+         <Header currentPage="homepage" />
         <div className="bodyContainer">
           <div className="container-fluid">
             <div className="row">

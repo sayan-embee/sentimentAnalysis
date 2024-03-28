@@ -109,7 +109,7 @@
               "RelativeDocumentMoniker": "NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
               "RelativeToolTip": "NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
-              "ViewState": "AQIAAMoAAAAAAAAAAAAIwNgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-26T07:50:03.175Z",
               "EditorCaption": ""
@@ -124,8 +124,7 @@
               "RelativeToolTip": "NSSOperationAutomationApp\\DataAccessHelper\\DataAccess.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAPECAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T05:49:40.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T05:49:40.624Z"
             }
           ]
         }
