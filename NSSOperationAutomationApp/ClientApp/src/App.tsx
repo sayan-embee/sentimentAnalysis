@@ -23,7 +23,7 @@ function App(props: any) {
 
 
     return (
-        <Provider theme={theme}>
+        
             <BrowserRouter>
                 <div>
                     <Switch>
@@ -31,7 +31,7 @@ function App(props: any) {
                     </Switch>
                 </div>
             </BrowserRouter>
-        </Provider>
+        
     );
 };
 

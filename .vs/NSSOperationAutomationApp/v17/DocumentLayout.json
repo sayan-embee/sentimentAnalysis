@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|e:\\all projects\\project\\teams app dev\\sentimentanalysis\\sentimentanalysis\\nssoperationautomationapp\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|e:\\all projects\\project\\teams app dev\\sentimentanalysis\\sentimentanalysis\\nssoperationautomationapp\\dataaccesshelper\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\dataaccesshelper\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|e:\\all projects\\project\\teams app dev\\sentimentanalysis\\sentimentanalysis\\nssoperationautomationapp\\models\\openaimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\models\\openaimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|e:\\all projects\\project\\teams app dev\\sentimentanalysis\\sentimentanalysis\\nssoperationautomationapp\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -27,18 +27,6 @@
       "RelativeMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|solutionrelative:NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_SentimentAnalysis_Insert.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|solutionrelative:NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_SentimentAnalysis_Insert.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|solutionrelative:NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{7172E0EA-DD3E-4526-BD75-4D5BF3A95B9B}|NSSOperationAutomationApp.DB\\NSSOperationAutomationApp.DB.sqlproj|solutionrelative:NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|e:\\all projects\\project\\teams app dev\\sentimentanalysis\\sentimentanalysis\\nssoperationautomationapp\\dataaccesshelper\\idataaccess.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{20F1609A-F16B-43DF-90D9-E60959291733}|NSSOperationAutomationApp\\NSSOperationAutomationApp.csproj|solutionrelative:nssoperationautomationapp\\dataaccesshelper\\idataaccess.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -50,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OpenAIModel.cs",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\Models\\OpenAIModel.cs",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp\\Models\\OpenAIModel.cs",
@@ -66,12 +54,11 @@
               "RelativeToolTip": "NSSOperationAutomationApp\\Models\\OpenAIModel.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAAAkwEwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T08:11:25.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T08:11:25.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "IDataAccess.cs",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\DataAccessHelper\\IDataAccess.cs",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp\\DataAccessHelper\\IDataAccess.cs",
@@ -79,13 +66,12 @@
               "RelativeToolTip": "NSSOperationAutomationApp\\DataAccessHelper\\IDataAccess.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T08:08:25.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T08:08:25.087Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "usp_SentimentAnalysis_Get.sql ",
+              "Title": "usp_SentimentAnalysis_Get.sql",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\usp_SentimentAnalysis_Get.sql\r\n(localdb)\\ProjectModels.NSSOperationAutomationApp.DB\r\n(ESPL\\012032)",
@@ -96,7 +82,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "usp_M_CallAction_Get.sql ",
+              "Title": "usp_M_CallAction_Get.sql",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_M_CallAction_Get.sql\r\n(localdb)\\ProjectModels.NSSOperationAutomationApp.DB\r\n(ESPL\\012032)",
@@ -107,7 +93,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "usp_SentimentAnalysis_Insert.sql ",
+              "Title": "usp_SentimentAnalysis_Insert.sql",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_SentimentAnalysis_Insert.sql",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_SentimentAnalysis_Insert.sql",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp.DB\\dbo\\Stored Procedures\\usp_SentimentAnalysis_Insert.sql\r\n(localdb)\\ProjectModels.NSSOperationAutomationApp.DB\r\n(ESPL\\012032)",
@@ -117,26 +103,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "OpenAIController.cs",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
               "RelativeToolTip": "NSSOperationAutomationApp\\Controllers\\OpenAIController.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAAYwNsAAAA+AAAA",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAIwNgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-26T07:50:03.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DataAccess.cs",
               "DocumentMoniker": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\DataAccessHelper\\DataAccess.cs",
               "RelativeDocumentMoniker": "NSSOperationAutomationApp\\DataAccessHelper\\DataAccess.cs",
               "ToolTip": "E:\\All Projects\\Project\\Teams App Dev\\SentimentAnalysis\\sentimentAnalysis\\NSSOperationAutomationApp\\DataAccessHelper\\DataAccess.cs",
               "RelativeToolTip": "NSSOperationAutomationApp\\DataAccessHelper\\DataAccess.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAD4v/ECAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPECAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T05:49:40.624Z",
               "EditorCaption": ""
