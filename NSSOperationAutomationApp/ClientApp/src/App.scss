@@ -15,7 +15,7 @@
 .bodyContainer {
   margin-top: 55px;
   padding: 10px;
-  // background-color: rgb(228, 229, 230);
+  //background-color: rgb(228, 229, 230);
   display: flex;
 }
 
@@ -29,6 +29,7 @@
 
 .rightPart {
   margin-top: 90px;
+
   img {
     width: 100%;
   }
@@ -61,27 +62,27 @@
   font-size: 15px;
 }
 
-.mt_15{
+.mt_15 {
   margin-top: 15px;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.loaderdiv{
+.loaderdiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.responseBody{
+.responseBody {
   margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: math;
+  // display: flex;
+  // flex-direction: column;
+  // text-align: center;
+  font-family: math;
 }
 
 .status {
@@ -96,12 +97,15 @@
 .positive {
   background-color: rgb(107, 183, 0);
 }
-.nagative {
+
+.negative {
   background-color: rgb(196, 49, 75);
 }
+
 .neutral {
   background-color: rgb(91, 95, 199);
 }
+
 .mixed {
   background-color: rgb(224, 224, 224);
 }
@@ -109,6 +113,7 @@
 table.table {
   font-size: 13px;
 }
+
 table.table thead th {
   border-top: none;
   background-color: #10446f;
@@ -117,15 +122,17 @@ table.table thead th {
   font-weight: 600;
   padding: 10px;
 }
+
 table.table tbody tr td {
   vertical-align: middle;
-    font-size: 13px;
-    padding: 10px;
+  font-size: 13px;
+  padding: 10px;
 }
 
 table {
   background-color: #fff;
 }
+
 .url_link {
   color: #4285f4;
   cursor: pointer;
@@ -134,10 +141,11 @@ table {
 
 }
 
-.fileurl{
+.fileurl {
   width: 65% !important;
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
+
 .tbl_buton {
   width: 30px;
   height: 30px;
@@ -149,30 +157,54 @@ table {
   background-color: #fff;
   color: #10446f;
   padding: 0 2px;
+
   svg {
     margin-top: -3px;
   }
 }
+
+.active {
+  font-weight: 600;
+  color: #007bff !important;
+  border-bottom: 2px solid #007bff !important;
+}
+
 .navigation {
   list-style: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
+
   li {
     display: inline-block;
     margin: 0 10px;
-    a {
+
+    div {
       color: black;
       font-size: 14px;
-      &:hover {
-        color: #007bff;
-        border-bottom: 2px solid #007bff;
-      }
-      &.active {
-        font-weight: 600;
-        color: #007bff;
-        border-bottom: 2px solid #007bff;
-      }
     }
   }
+}
+
+.accordian {
+  .accordion-button {
+    border-radius: 5px;
+    width: 100%;
+    border: none !important;
+    text-align: left;
+    background-color: #cfcff3;
+    font-size: 19px;
+  }
+  .accordion-body{
+    background-color: #dcdcf5;
+    margin-top: -14px;
+    padding: 10px;
+  }
+
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.accordian::-webkit-scrollbar {
+  display: none;
 }

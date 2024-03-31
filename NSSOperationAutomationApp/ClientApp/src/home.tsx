@@ -4,6 +4,7 @@ import { sentimentAnalysisAPI } from "./apis/APIList";
 import { Loader, Text, Input } from "@fluentui/react-northstar";
 import Header from "./header";
 import "./App.scss";
+import Accordion from 'react-bootstrap/Accordion';
 
 
 const base_URL = window.location.origin;
@@ -15,9 +16,11 @@ interface MyState {
   loading?: any;
   searchResponse?: any;
   sentiment?: any;
+  outputModel?: any;
+  summary?:any
 }
 
-interface ISearchContentProps {}
+interface ISearchContentProps { }
 
 class SentimentAnalysisPage extends React.Component<
   ISearchContentProps,
@@ -27,10 +30,11 @@ class SentimentAnalysisPage extends React.Component<
     super(props);
     this.state = {
       loading: false,
+      outputModel: false
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   fileUpload() {
     (document.getElementById("upload") as HTMLInputElement).click();
@@ -43,6 +47,7 @@ class SentimentAnalysisPage extends React.Component<
     this.setState(
       {
         loading: true,
+        outputModel: false
       },
       () => {
         sentimentAnalysisAPI(fileUploadFormData).then((response) => {
@@ -50,8 +55,10 @@ class SentimentAnalysisPage extends React.Component<
           if (response.data) {
             this.setState({
               loading: false,
-              searchResponse: response.data.outputModel.reason,
-              sentiment: response.data.outputModel.sentiment,
+              outputModel: true,
+              searchResponse: response.data.outputModel && response.data.outputModel.reason,
+              sentiment: response.data.outputModel && response.data.outputModel.sentiment,
+              summary: response.data.outputModel && response.data.outputModel.summaryText,
             });
           }
         });
@@ -62,7 +69,7 @@ class SentimentAnalysisPage extends React.Component<
   render() {
     return (
       <div>
-         <Header currentPage="homepage" />
+        <Header currentPage="homepage" />
         <div className="bodyContainer">
           <div className="container-fluid">
             <div className="row">
@@ -103,41 +110,42 @@ class SentimentAnalysisPage extends React.Component<
                     </div>
                   </div>
 
-                  {this.state.loading ? (
-                    <div className="loaderdiv">
-                      <Loader label="Uploading files and sentiment analysis is being performed" />
-                    </div>
-                  ) : (
-                    <div className="responseBody">
-                      <Text
-                        content={this.state.searchResponse}
-                        style={{ fontSize: "20px" }}
-                      />
-                      <Text
-                        content={this.state.sentiment}
-                        weight="bold"
-                        className={`${
-                          this.state.sentiment === "Negative"
-                            ? "redTag"
-                            : this.state.sentiment === "Positive"
-                            ? "greenTag"
-                            : "blueTag"
-                        } `}
-                        style={{ fontSize: "24px" }}
-                      />
-                    </div>
-                  )}
-                </div>
+                  {this.state.loading ? <div className='loaderdiv'>
+                    <Loader size="small" label="Uploading files and sentiment analysis is being performed" />
+                  </div> : <div>
+                    {this.state.outputModel && < Accordion className={"accordian"} defaultActiveKey={['0']} alwaysOpen>
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>Sentiment</Accordion.Header>
+                      <Accordion.Body>
+                        <Text content={this.state.sentiment} weight="bold" className={`${this.state.sentiment === 'Negative' ? 'redTag' : this.state.sentiment === 'Positive' ? 'greenTag' : 'blueTag'} `} style={{ fontSize: "24px" }} />
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>Reason</Accordion.Header>
+                      <Accordion.Body>
+                        <Text content={this.state.searchResponse} style={{ fontSize: "16px" }} />
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                      <Accordion.Header>Summary</Accordion.Header>
+                      <Accordion.Body>
+                        <Text content={this.state.summary} style={{ fontSize: "16px" }} />
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                  }
+                </div> }
               </div>
-              <div className="col-sm-6">
-                <div className="rightPart">
-                  <img src={bgimg} alt="filter" />
-                </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="rightPart">
+                <img src={bgimg} alt="filter" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div >
     );
   }
 }

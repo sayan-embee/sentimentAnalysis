@@ -24,3 +24,9 @@ E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOpe
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\refactor.xml
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\postdeploy.sql
 E:\All Projects\Project\Teams App Dev\SentimentAnalysis\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\predeploy.sql
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dacpac
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.dll
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\bin\Debug\NSSOperationAutomationApp.DB.pdb
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.sqlproj.AssemblyReference.cache
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.dll
+E:\AzureAI\sentimentAnalysis\NSSOperationAutomationApp.DB\obj\Debug\NSSOperationAutomationApp.DB.pdb
