@@ -24,8 +24,9 @@ const Header = ({ currentPage }: HeaderProps) => {
   return (
     <div className="container-fluid">
       <div className="headerdiv mb-3 px-4" style={{ display: "flex",justifyContent: "space-between",alignItems: "center" }}>
+      <a href="/homepage">
         <img src={embeelogo} alt="embee logo" style={{ height: "32px", margin: "6px" }}/>
-        
+        </a>
         <div>
           <ul className="navigation">
             

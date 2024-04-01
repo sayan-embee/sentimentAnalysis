@@ -79,28 +79,28 @@ class SentimentTableList extends React.Component<IDashboardProps, MyState> {
                     <table className="table table-bordered dataTable">
                       <thead>
                         <tr>
-                          <th className="text-center">Id</th>
+                          {/* <th className="text-center">Id</th> */}
                           <th className="text-center">Sentiment</th>                          
-                          <th className="text-center">Internal File Name</th>                          
-                          <th className="text-center" style={{width:"300px"}}>File Url</th>
+                          <th className="text-center">File Name</th>                          
+                          {/* <th className="text-center" style={{width:"300px"}}>File Url</th> */}
                           <th className="text-center" style={{minWidth:"300px"}}>Reason</th>
                           <th className="text-center">Summary</th>
-                          <th className="text-center">Transcribe</th>
+                          <th className="text-center">Transcript</th>
                         </tr>
                       </thead>
                       <tbody>
                         {this.state.data.map((item: any, index: number) => (
                           <tr key={index}>
-                            <td>{item.autoId}</td>
+                            {/* <td>{item.autoId}</td> */}
                             <td>
                                 <Text className={`status ${item.sentiment === "Positive" ? "positive" : item.sentiment === "Negative" ? "negative" :item.sentiment === "Neutral"? "neutral":"mixed"}`} content={item.sentiment}/>
                             </td>
-                            <td>{item.fileInternalName}</td>
+                            {/* <td>{item.fileInternalName}</td> */}
                             <td>
-                                <div onClick={() => window.open(item.fileUrl, "_blank")}><p className="url_link">{item.fileUrl}</p>
-                                {/* <Text content={} /> */}
+                                <div onClick={() => window.open(item.fileUrl, "_blank")}><p className="url_link">{item.fileName}</p>
+                                
                                 </div>
-                                </td>
+                            </td>
                             <td>{item.reason}</td>                           
                             
                             <td className="text-center">       
@@ -126,7 +126,7 @@ class SentimentTableList extends React.Component<IDashboardProps, MyState> {
         </div>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header >
-          <Modal.Title>{modalContent === "summary" ? "Summary" : "Transcribe"}</Modal.Title>            
+          <Modal.Title>{modalContent === "summary" ? "Summary" : "Transcript"}</Modal.Title>            
           </Modal.Header>
           <Modal.Body>
             {modalContent === "summary" && currentItem && (<p>{currentItem.summaryText}</p>)}

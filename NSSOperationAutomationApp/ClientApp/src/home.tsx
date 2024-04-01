@@ -7,6 +7,7 @@ import "./App.scss";
 import Accordion from 'react-bootstrap/Accordion';
 
 
+
 const base_URL = window.location.origin;
 const bgimg = base_URL + "/images/banner-graphics.png";
 const buttonimg = base_URL + "/images/button.png";
@@ -110,9 +111,12 @@ class SentimentAnalysisPage extends React.Component<
                     </div>
                   </div>
 
-                  {this.state.loading ? <div className='loaderdiv'>
+                  {this.state.loading ? (<div className="loaderdiv">
                     <Loader size="small" label="Uploading files and sentiment analysis is being performed" />
-                  </div> : <div>
+                  </div>)
+                  
+                  
+                  : <div>
                     {this.state.outputModel && < Accordion className={"accordian"} defaultActiveKey={['0']} alwaysOpen>
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>Sentiment</Accordion.Header>
