@@ -32,8 +32,8 @@ namespace NSSOperationAutomationApp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddMicrosoftIdentityWebApi(_configuration.GetSection("AzureAd"));
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //        .AddMicrosoftIdentityWebApi(_configuration.GetSection("AzureAd"));
 
             services.RegisterConfigurationSettings(_configuration);
 
