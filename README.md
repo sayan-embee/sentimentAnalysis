@@ -1,7 +1,7 @@
 
 ---
 
-## Sentiment Analysis App KT Documentation
+## Sentiment Analysis App Documentation
 
 ### Overview
 The Sentiment Analysis App analyzes audio data from .mp3 files using the Azure OpenAI Whisper model. The application processes user-uploaded audio files stored in Azure Blob Storage to extract the reason (motive of speakers), an audio summary, and an audio transcript. The analysis data is stored in a SQL Server database.
