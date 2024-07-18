@@ -70,4 +70,6 @@ In the reference picture, users can upload a .mp3 file by clicking the "Analyze 
 
 ---
 
-This documentation should provide a clear and comprehensive overview of the Sentiment Analysis App's functionality and workflow.
+![image](https://github.com/user-attachments/assets/25763470-eba4-4e09-ada0-6b4d81aeaf85)
+![image](https://github.com/user-attachments/assets/766009b6-bcf5-45b5-b132-189768080ba8)
+
